@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Viktoria Nosick](https://up.htmlacademy.ru/htmlcss/25/user/469679).
-* Наставник: `Неизвестно`.
+* Наставник: [Денис Выхрыстюк] (https://htmlacademy.ru/profile/id568747).
 
 ---
 
