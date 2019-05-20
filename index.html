@@ -10,18 +10,26 @@
         <a class="logo" href="#">
           <img src="img/logo-technomart.svg" width="109" height="19" alt="Логотип Техномарт">
         </a>
-          <!-- Здесь будет форма -->
-        <a class="notification-button">
-          <img src="img/marker-icon.svg" width="15" height="15">
+        <form method="post" action="/echo" class="search-form" >
+          <label>
+            <span class="visually-hidden">
+              Поле поиска
+            </span>
+            <img src="img/icon-search.svg" width="17" height="17">
+            <input type="search" class="search" placeholder="Поиск:">
+          </label>
+        </form>
+        <a class="notification-button" href="#">
+          <img src="img/icon-bookmark.svg" width="14" height="16">
           Закладки: 0
         </a>
-        <a class="notification-button">
-          <img src="img/carticon.svg" width="15" height="15">
+        <a class="notification-button" href="#">
+          <img src="img/cart-icon.svg" width="15" height="15">
           Корзина: 0
         </a>
-        <a class="cheсkout-button">
+        <button class="cheсkout-button" type="button">
           Оформить заказ
-        </a>
+        </button>
       </div>
       <div class="header-middle">
         <h1>
@@ -29,7 +37,7 @@
         </h1>
         <div class="contacts">
           <p class="phone-header"> 
-            <img src="img/phone-icon.svg" width="10" height="10">
+            <img src="img/icon-phone.svg" width="19" height="19">
             <a href="tel:+78125550555"> +7 (812) 555-05-55 </a>
           </p>
           <p>
@@ -38,12 +46,13 @@
         </div >
         <ul class="user-navigation">
           <li class="signin-link">
-            <a class="user-button" href="#">
+            <a class="user-button" href="login.html">
+              <img src="img/icon-login.svg" width="20" height="17">
               Вход
             </a>
           </li>
           <li class="signup-link">
-            <a class="user-button" href="#">
+            <a class="user-button" href="signup-link">
               Регистрация
             </a>
           </li>
@@ -99,7 +108,7 @@
         <p class="map">
           <img src="img/map.jpg" width="300" height="158" alt="Карта офиса по адресу улица Большая Конюшенная, 19">
         </p>
-        <a class="button" href="Contacts.html"> Заблудились? Напишите нам! </a>
+        <button class="button" type="button"> Заблудились? Напишите нам! </button>
       </section>
     </main>
 
@@ -141,9 +150,21 @@
           Все права защищены
         </p>
         <ul class="footer-social">
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
+          <li>
+            <a class="social-button" href="#">
+              <img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте">
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="#">
+              <img src="img/fb-icon.svg" width="26" height="15" alt="Фейсбук">
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="#">
+              <img src="img/insta-icon.svg" width="26" height="15" alt="Инстаграм">
+            </a>
+          </li>
         </ul>
         <div class="footer-copyright">
           <div class="link">
@@ -161,5 +182,52 @@
         </div>
       </div>
     </footer>
+
+    <section class="modal madal-map">
+      <h2 class="visually-hidden">
+        Как до нас добраться
+      </h2>
+      <p>
+        <img src="img/map_modalwindow.jpg" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </p>
+      <button class="modal-close" type="button">
+        Закрыть
+      </button>
+    </section>
+
+    <section class="modal modal-feedback">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="feedback-item"> 
+          <label>
+            Ваше имя:
+            <input type="text" name="name" placeholder="Имя Фамилия">
+          </label>
+        </p>
+        <p class="feedback-item"> 
+          <label>
+            Ваше e-mail:
+            <input type="text" name="email" placeholder="email@example.com">
+          </label>
+        </p>
+        <p class="feedback-item"> 
+          <label>
+            Текст письма:
+            <textarea name="text" rows="5">
+                В свободной форме
+            </textarea>
+          </label>
+        </p>
+        <p class="feedback-item"> 
+          <button class="button" type="submit">
+            Отправить
+          </button>
+        </p>
+      </form>
+      <button class="modal-close" type="button">
+        Закрыть
+      </button>
+    </section>
+
   </body>
 </html>
