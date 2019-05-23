@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normolize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -19,15 +22,15 @@
             <input type="search" class="search" placeholder="Поиск:">
           </label>
         </form>
-        <a class="notification-button" href="#">
+        <a class="notification-link" href="#">
           <img src="img/icon-bookmark.svg" width="14" height="16">
           Закладки: 0
         </a>
-        <a class="notification-button" href="#">
+        <a class="notification-link" href="#">
           <img src="img/cart-icon.svg" width="15" height="15">
           Корзина: 0
         </a>
-        <button class="cheсkout-button" type="button">
+        <button class="button cheсkout-button" type="button">
           Оформить заказ
         </button>
       </div>
@@ -46,13 +49,13 @@
         </div >
         <ul class="user-navigation">
           <li class="signin-link">
-            <a class="user-button" href="login.html">
+            <a class="button user-button" href="login.html">
               <img src="img/icon-login.svg" width="20" height="17">
               Вход
             </a>
           </li>
           <li class="signup-link">
-            <a class="user-button" href="signup-link">
+            <a class="button user-button" href="signup-link">
               Регистрация
             </a>
           </li>
@@ -60,7 +63,7 @@
       </div>
 
       <nav class="site-navigation">
-        <ul>
+        <ul class="site-navigation">
           <li><a href="#">Главная</a></li>
           <li><a href="Company.html">Компания</a></li>
           <li><a href="Catalog.html">Каталог</a></li>
@@ -72,10 +75,10 @@
       </nav>
 
     </header>
-    <main>
+    <main class="container"> 
       <section class="company">
         <h2>
-          Компания &#171 Техморарт &#187
+          Компания &#171Техморарт&#187
         </h2>
         <p>
           Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и<br>
@@ -97,7 +100,7 @@
         </ul>
         <a class="button" href="Company.html"> Подробнее о компании </a>
       </section>
-      <section>
+      <section class="contacts">
         <h2>
           Контакты
         </h2>
@@ -118,14 +121,14 @@
           <a class="logo" href="#">
             <img src="img/logo-technomart.svg" width="138" height="23" alt="Логотип Техномарт">
           </a>
-          <p class="contacts">
+          <p class="footer-contacts">
             г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8<br>
             <a href="tel:+78125550555"> +7 (812) 555-05-55 </a>
           </p>
         </div>
         <div class="navigation">
-          <nav class="navigation_part1">
-            <ul>
+          <nav class="navigation-part1">
+            <ul class="navigation-part1">
               <li><a href="Company.html">Компания</a></li>
               <li><a href="News.html">Новости</a></li>
               <li><a href="Catalog.html">Каталог</a></li>
@@ -133,8 +136,8 @@
               <li><a href="Contacts.html">Контакты</a></li>
             </ul>
           </nav>
-          <nav class="navigation_part2">
-            <ul>
+          <nav class="navigation-part2">
+            <ul class="navigation-part2">
               <li><a href="Materials.html">Материалы</a></li>
               <li><a href="Equipment.html">Техника</a></li>
               <li><a href="Tool.html">Инструмент</a></li>
