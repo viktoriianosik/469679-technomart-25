@@ -246,7 +246,7 @@ body {
     background-color: #ed4741;
   }
 
-  .catalog-order button {
+   .button-order {
     font-size: 14px;
     line-height: 18px;
     text-align: center;
@@ -254,10 +254,29 @@ body {
     background-color: #63a63e;
   }
 
-  button.button-marker {
+  .button-buy:hover{
+    box-shadow: inset 0px -3px 0 0 #367315;
+    background-color: #5fbb2d;
+  }
+
+  .button-buy {
+    background-color: #518534;
+  }
+
+  .button-marker {
     color: #32425c;
     background-color: #ffffff;
     border: solid 3px #63a63e;
+  }
+
+  .button-marker:hover {
+    border: solid 3px #32425c;
+  }
+
+  .button-marker:focus {
+    color: rgba(50, 66, 92, 0.3);
+    opacity: 0.3;
+    border: solid 3px #32425c;
   }
 
   .company p,
@@ -297,7 +316,6 @@ body {
   .footer-top {
     background-color: #32425c;
     font-size: 18px;
-
   }
 
   .footer-contacts a {
