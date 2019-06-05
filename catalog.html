@@ -384,7 +384,7 @@
       <div class="footer-top">
         <div class="container">
           <div class="footer-top__logo-navigation">
-            <a class="footer-top__logo" href="#">
+            <a class="footer-top__logo" href="index.html">
               <img src="img/logo-technomart.svg" width="138" height="23" alt="Логотип Техномарт">
             </a>
             <nav class="navigation-footer">
@@ -455,19 +455,23 @@
       </div>
     </footer>
 
-    <section class="modal modal-product-in-cart"> 
-      <p class="product-in-cart">
-        <img src="img/modal-check.svg" width="66" height="66">
+    <section class="modal modal__product-in-cart"> 
+      <p class="modal__product-in-cart__text">
         Товар добавлен в корзину!
       </p>
-      <div class="button-field">
-        <button class="button confirm-button" type="submit" name="confirm-order">
-          Оформить заказ
-        </button>
-        <button class="button continue-button" type="button" name="continue-order">
-          Продолжить покупки
-        </button>
+      <div class="modal__product-in-cart__buttons-wrapper">
+       <div class="modal__product-in-cart__buttons">
+          <button class="modal__product-in-cart__button modal__product-in-cart__button-confirm button" type="submit" name="confirm-order">
+            Оформить заказ
+          </button>
+          <button class="modal__product-in-cart__button modal__product-in-cart__button-continue button" type="button" name="continue-order">
+            Продолжить покупки  
+          </button>
+        </div>
       </div>
+        <button class="modal-close" type="button">
+          Закрыть
+        </button>
     </section>
 
   </body>
