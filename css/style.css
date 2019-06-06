@@ -356,6 +356,10 @@ input[type="radio"].visually-hidden {
     color: rgba(0, 0, 0, 0.3);
 }
 
+.header-middle__user-profile {
+    position: relative;
+}
+
 .header-middle__user-name {
     position: relative;
 
@@ -372,27 +376,25 @@ input[type="radio"].visually-hidden {
 }
 
 .user-button__user-icon {
-    content: " ";
     position: absolute;
     top: 13px;
     left: 14px;
 }
 
-.user-button__logout-icon {
-    content: " ";
+.header-middle__logout {
     position: absolute;
     top: 13px;
     right: 10px;
 }
 
 .header-middle__user-name:hover .user-button__user-icon__color,
-.header-middle__user-name:hover .user-button__logout-icon__color,
+.header-middle__logout:hover .user-button__logout-icon__color,
 .user-button__login:hover .user-button__login-icon__color  {
     fill: #32425c;
 }
 
 .header-middle__user-name:focus .user-button__user-icon__color,
-.header-middle__user-name:focus .user-button__logout-icon__color,
+.header-middle__logout:focus .user-button__logout-icon__color,
 .user-button__login:focus .user-button__login-icon__color {
     fill: #c5c5c5;
 }
