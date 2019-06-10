@@ -50,9 +50,7 @@
             Интернет-магазин строительных материалов &nbsp и инструментов для ремонта
           </h1>
           <div class="header-middle__contacts">
-            <p class="header-middle__phone"> 
-              <a class="header-middle__phone-link" href="tel:+78125550555"> +7 (812) 555-05-55 </a>
-            </p>
+            <a class="header-middle__phone-link" href="tel:+78125550555"> +7 (812) 555-05-55 </a>
             <p class="header-middle__address">
               г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8
             </p>
@@ -125,6 +123,23 @@
           <h2 class="visually-hidden">Фильтр товаров</h2>
           <form class="filters" method="get" action="https://echo.htmlacademy.ru">
             <fieldset class="filter__form">
+              <legend class="filter__title">Цена:</legend>
+              <div class="filter__range">
+                <div class="filter__controls-range">
+                  <div class="filter__controls-range__scale">
+                      <div class="filter__controls-range__scale-bar"></div>
+                  </div>
+                  <div class="filter__controls-range__toggle filter__controls-range__toggle-min"></div>
+                  <div class="filter__controls-range__toggle filter__controls-range__toggle-max"></div>
+                </div>
+                <div class="filter__controls-price">
+                  <input class="filter__controls-price__input filter__controls-price__input-min" name="min-price" type="text" value="0">
+                  <span class="filter__controls-price__dash"></span>
+                  <input class="filter__controls-price__input filter__controls-price__input-max" name="max-price" type="text" value="30000">
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="filter__form">
               <legend class="filter__title">Производители:</legend>
               <ul class="filter__items">
                 <li class="filter__item">
@@ -172,14 +187,14 @@
                 <li class="filter__item">
                   <label class="filter__item-label">
                     <input class="visually-hidden filter__item-input filter__item-input__radio" type="radio" name="product-group" value="rechargeable" checked>
-                    <span class="input__new-radio"></span></span>
+                    <span class="input__new-radio"></span>
                     <span class="filter__item-input__text">Аккумуляторные</span>
                   </label>
                 </li>
                 <li class="filter__item">
                   <label  class="filter__item-label">
                     <input class="visually-hidden filter__item-input filter__item-input__radio" type="radio" name="product-group" value="networked">
-                    <span class="input__new-radio"></span></span>
+                    <span class="input__new-radio"></span>
                     <span class="filter__item-input__text">Сетевые</span>
                   </label>
                 </li>
@@ -201,7 +216,7 @@
               </div>
               <a href="catalog-item.html" class="catalog-item__link">
                 <p class="catalog-item__image">
-                  <img src="img/Perforator_1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+                  <img src="img/Perforator_3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
                 </p>
                 <h3 class="catalog-item__name">
                   Перфоратор BOSCH BFG 3000
@@ -221,7 +236,7 @@
               </div>
               <a href="catalog-item.html" class="catalog-item__link">
                 <p class="catalog-item__image">
-                  <img src="img/Perforator_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+                  <img src="img/Perforator_6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
                 </p>
                 <h3 class="catalog-item__name">
                   Перфоратор BOSCH BFG 6000
@@ -241,7 +256,7 @@
               </div>
               <a href="catalog-item.html" class="catalog-item__link">
                 <p class="catalog-item__image">        
-                  <img src="img/Perforator_3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">   
+                  <img src="img/Perforator_2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">   
                 </p>
                 <h3 class="catalog-item__name">
                   Перфоратор BOSCH BFG 2000
@@ -260,11 +275,11 @@
               </div>
               <a href="catalog-item.html" class="catalog-item__link">
                 <p class="catalog-item__image">
-                  <img src="img/Perforator_1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+                  <img src="img/Perforator_3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
                 </p>
                 <h3 class="catalog-item__name">
                   Перфоратор BOSCH BFG 3000
-                </h3 class="catalog-item__name">               
+                </h3>               
               </a>
               <p class="catalog-item__price">
                 22500 P.
@@ -280,7 +295,7 @@
               </div>
               <a href="catalog-item.html" class="catalog-item__link">
                 <p class="catalog-item__image">             
-                  <img src="img/Perforator_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">              
+                  <img src="img/Perforator_6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">              
                 </p>
                 <h3 class="catalog-item__name">
                   Перфоратор BOSCH BFG 6000
@@ -301,14 +316,14 @@
               </div>
               <a href="catalog-item.html" class="catalog-item__link">
                 <p class="catalog-item__image">        
-                  <img src="img/Perforator_3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">   
+                  <img src="img/Perforator_2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">   
                 </p>
                 <h3 class="catalog-item__name">
-                  Перфоратор BOSCH BFG 3000
+                  Перфоратор BOSCH BFG 2000
                 </h3>
               </a>
               <p class="catalog-item__price"></p>
-              <p cclass="catalog-item__new-price">
+              <p class="catalog-item__new-price">
                 12500 P.
               </p>
             </li>
@@ -319,7 +334,7 @@
               </div>
               <a href="catalog-item.html" class="catalog-item__link">
                 <p class="catalog-item__image">
-                  <img src="img/Perforator_1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+                  <img src="img/Perforator_3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
                 </p>
                 <h3 class="catalog-item__name">             
                   Перфоратор BOSCH BFG 3000
@@ -340,7 +355,7 @@
               </div>
               <a href="catalog-item.html" class="catalog-item__link">
                 <p class="catalog-item__image">
-                  <img src="img/Perforator_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+                  <img src="img/Perforator_6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
                 </p>
                 <h3 class="catalog-item__name">
                   Перфоратор BOSCH BFG 6000
@@ -360,10 +375,10 @@
               </div>
               <a href="catalog-item.html" class="catalog-item__link">
                 <p class="catalog-item__image">
-                  <img src="img/Perforator_3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+                  <img src="img/Perforator_2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
                 </p>
                 <h3 class="catalog-item__name">
-                  Перфоратор BOSCH BFG 3000
+                  Перфоратор BOSCH BFG 2000
                 </h3>
               </a>
               <p class="catalog-item__price"></p>
@@ -394,10 +409,12 @@
             </nav>
           </div>
           <div class="footer-top__contacts-navigation">
-            <p class="footer-top__contacts">
-              г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8<br>
+            <div>
+              <p class="footer-top__contacts">
+                г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8
+              </p>
               <a class="footer-top__phone-link" href="tel:+78125550555"> +7 (812) 555-05-55 </a>
-            </p>
+            </div>
             <nav class="navigation-footer">
               <ul class="navigation-footer__items navigation-footer__items__bottom">
                 <li class="navigation-footer__item"><a class="navigation-footer__link navigation-footer__link-color" href="Materials.html">Материалы</a></li>
@@ -457,7 +474,7 @@
       </p>
       <div class="modal__product-in-cart__buttons-wrapper">
        <div class="modal__product-in-cart__buttons">
-          <button class="modal__product-in-cart__button modal__product-in-cart__button-confirm button" type="submit" name="confirm-order">
+          <button class="modal__product-in-cart__button modal__product-in-cart__button-confirm button" type="button" name="confirm-order">
             Оформить заказ
           </button>
           <button class="modal__product-in-cart__button modal__product-in-cart__button-continue button" type="button" name="continue-order">
