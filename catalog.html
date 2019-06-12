@@ -104,30 +104,34 @@
       </nav>
     </header>
     
-    <main class="container inner-container">
-      <ul class="inner-main__breadcrumbs">
-        <li class="inner-main__breadcrumbs-item">
-          <a class="inner-main__breadcrumbs-link" href="index.html">
-            <img src="img/icon-home.svg" width="14" height="12" alt="Главная">
-          </a>
-        </li>
-        <li class="inner-main__breadcrumbs-item"><a class="inner-main__breadcrumbs-link" href="Catalog.html"> Каталог</a></li>
-        <li class="inner-main__breadcrumbs-item"><a class="inner-main__breadcrumbs-link" href="Tool.html"> Инструмент</a></li>
-        <li class="inner-main__breadcrumbs-item breadcrumbs-current"><a class="inner-main__breadcrumbs-link" href="Perforators.html">Перфораторы </a></li>
-      </ul>
-      <h1 class="inner-main__title container">
-        Перфораторы
-      </h1>
-      <div class="inner-main__catalog-wrapper">
+    <main class="inner-container">
+      <div class="container"> 
+        <ul class="inner-main__breadcrumbs">
+          <li class="inner-main__breadcrumbs-item">
+            <a class="inner-main__breadcrumbs-link" href="index.html">
+              <img src="img/icon-home.svg" width="14" height="12" alt="Главная">
+            </a>
+          </li>
+          <li class="inner-main__breadcrumbs-item"><a class="inner-main__breadcrumbs-link" href="Catalog.html"> Каталог</a></li>
+          <li class="inner-main__breadcrumbs-item"><a class="inner-main__breadcrumbs-link" href="Tool.html"> Инструмент</a></li>
+          <li class="inner-main__breadcrumbs-item breadcrumbs-current"><a class="inner-main__breadcrumbs-link" href="Perforators.html">Перфораторы </a></li>
+        </ul>
+      </div>
+      <div class="container">
+        <h1 class="inner-main__title">
+          Перфораторы
+        </h1>
+      </div>
+      <div class="inner-main__catalog-wrapper container">
         <section class="filters">
-          <h2 class="visually-hidden">Фильтр товаров</h2>
-          <form class="filters" method="get" action="https://echo.htmlacademy.ru">
+          <h2 class="filters__title">Фильтр:</h2>
+          <form  method="get" action="https://echo.htmlacademy.ru">
             <fieldset class="filter__form">
               <legend class="filter__title">Цена:</legend>
               <div class="filter__range">
                 <div class="filter__controls-range">
                   <div class="filter__controls-range__scale">
-                      <div class="filter__controls-range__scale-bar"></div>
+                     <div class="filter__controls-range__scale-bar"></div>
                   </div>
                   <div class="filter__controls-range__toggle filter__controls-range__toggle-min"></div>
                   <div class="filter__controls-range__toggle filter__controls-range__toggle-max"></div>
@@ -179,12 +183,12 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="filter__form">
+            <fieldset class="filter__form filter__form-supply">
               <legend class="filter__title">
                 Питание:
               </legend>
               <ul class="filter__items">
-                <li class="filter__item">
+                <li class="filter__item ">
                   <label class="filter__item-label">
                     <input class="visually-hidden filter__item-input filter__item-input__radio" type="radio" name="product-group" value="rechargeable" checked>
                     <span class="input__new-radio"></span>
@@ -208,6 +212,24 @@
           <h2 class="visually-hidden">
             Список перфораторов
           </h2>
+          <div class="inner-main__catalog-sorting">
+            <h2 class="inner-main__catalog-sorting__title">Сортировка:</h2>
+            <div class="inner-main__catalog-sorting__button-wrapper">
+              <button  class="inner-main__catalog-sorting__button">
+                <span class="inner-main__catalog-sorting__button-text">По цене: </span>
+              </button>
+              <button class="inner-main__catalog-sorting__button">
+                <span class="inner-main__catalog-sorting__button-text">По типу:</span>
+              </button>
+              <button class="inner-main__catalog-sorting__button">
+                <span class="inner-main__catalog-sorting__button-text"> По функционалу: </span>
+              </button>
+            </div>
+            <div class="inner-main__catalog-sorting__arrow-wrapper">
+                <button class="inner-main__catalog-sorting__arrow inner-main__catalog-sorting__arrow-top"></button>
+                <button class="inner-main__catalog-sorting__arrow inner-main__catalog-sorting__arrow-bottom"></button>
+            </div>
+          </div>
           <ul class="inner-main__catalog-list">
             <li class="inner-main__catalog-item">
               <div class="catalog-item__actions">
@@ -389,6 +411,30 @@
           </ul>
         </section>
       </div>
+      <section class="inner-main-pagination container">
+        <ul class="inner-main__pagination-list">
+            <li class="inner-main__pagination-item">
+              <a class="inner-main__pagination-item__link inner-main__pagination-item__link-current"  href="#">1</a>
+            </li>
+            <li class="inner-main__pagination-item">
+              <a class="inner-main__pagination-item__link"> 2</a>
+            </li>
+            <li class="inner-main__pagination-item">
+              <a class="inner-main__pagination-item__link" href="#">3</a>
+            </li>
+            <li class="inner-main__pagination-item">
+              <a class="inner-main__pagination-item__link inner-main__pagination-item__link-next" href="#">Следующая</a>
+            </li>
+        </ul>
+      </section>
+      <section class="inner-main__description">
+        <div class="container">
+          <h2 class="inner-main__description-title">Пара слов о перфораторах</h2>
+          <p class="inner-main__description-text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+            Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+          </p>
+        </div>
+      </section>
     </main>
     
     <footer>
