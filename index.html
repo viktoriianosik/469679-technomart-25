@@ -108,23 +108,35 @@
               <a class="main-promo__list-item__link button" href="tool.html">На все случаи</a>
             </div>
             <div class="main-promo__slider" >
-              <div class="main-promo__slider-drill">
-                <h3 class="main-promo__slider-title"> Дрели </h3>
-                <span class="main-promo__slider-text"> Соседям на радость!</span>
-                <img src="img/slide-drill.jpg" width="620px" height="256px" alt="Рекламная картинка дрели">
-              </div>
-              <div class="main-promo__slider-perforator">
-                <h3 class="main-promo__slider-title"> Перфораторы </h3>
-                <span class="main-promo__slider-text"> Настоящие мужские игрушки</span>
-                <img src="img/slide-perforator.jpg" width="620px" height="256px" alt="Рекламная картинка перфоратора">
-              </div>
               <span class="main-promo__slider-switch__left"></span>
               <span class="main-promo__slider-switch__right"></span>
               <a class="main-promo__slider-button button" href="catalog.html">Открыть каталог</a>
-              <div class="main-promo__slider-controls">
-                <input class="visually-hidden main-promo__slided-control" type="radio" name="control" value="drill">
-                <input class="visually-hidden main-promo__slider-control" type="radio" name="control" value="perforator">
-              </div>
+              <ul class="main-promo__slider-controls">
+                <li>
+                  <label class="main-promo__slider-control__label">
+                    <input class="visually-hidden main-promo__slider-control__input main-promo__slider-control__input-drill" type="radio" name="control" checked>
+                    <span class="main-promo__slider-control__input-new"></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="main-promo__slider-control__label">
+                    <input class="visually-hidden main-promo__slider-control__input main-promo__slider-control__input-perforator" type="radio" name="control">
+                    <span class="main-promo__slider-control__input-new"></span>
+                  </label>
+                </li>
+              </ul>
+              <ul class="main-promo__slider-list">
+                <li class="main-promo__slider-drill">
+                  <h3 class="main-promo__slider-title"> Дрели </h3>
+                  <span class="main-promo__slider-text"> Соседям на радость!</span>
+                  <img src="img/slide-drill.jpg" width="620px" height="256px" alt="Рекламная картинка дрели">
+                </li>
+                <li class="main-promo__slider-perforator">
+                  <h3 class="main-promo__slider-title"> Перфораторы </h3>
+                  <span class="main-promo__slider-text"> Настоящие мужские игрушки</span>
+                  <img src="img/slide-perforator.jpg" width="620px" height="256px" alt="Рекламная картинка перфоратора">
+                </li>
+              </ul>
             </div>
           </div>
           <div class="main-promo__list-block main-promo__list-block__right">
@@ -151,6 +163,10 @@
         </div>
         <ul class="main-popular__catalog-list">
           <li class="main-popular__catalog-item">
+            <div class="catalog-item__actions">
+              <a href="#" class="catalog-item__action-buy">Купить</a>
+              <a href="#" class="catalog-item__action-bookmark">В закладки</a>
+            </div>
             <a href="catalog-item.html" class="catalog-item__link">
               <p class="catalog-item__image">        
                 <img src="img/Perforator_9000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">   
@@ -163,6 +179,10 @@
             <p class="catalog-item__new-price"> 25500 P. </p>
           </li>
           <li class="main-popular__catalog-item">
+            <div class="catalog-item__actions">
+              <a href="#" class="catalog-item__action-buy">Купить</a>
+              <a href="#" class="catalog-item__action-bookmark">В закладки</a>
+            </div>
             <a href="catalog-item.html" class="catalog-item__link">
               <p class="catalog-item__image">        
                 <img src="img/Perforator_3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">   
@@ -175,6 +195,10 @@
             <p class="catalog-item__new-price"> 15500 P. </p>
           </li>
           <li class="main-popular__catalog-item">
+            <div class="catalog-item__actions">
+              <a href="#" class="catalog-item__action-buy">Купить</a>
+              <a href="#" class="catalog-item__action-bookmark">В закладки</a>
+            </div>
             <a href="catalog-item.html" class="catalog-item__link">
               <p class="catalog-item__image">        
                 <img src="img/Perforator_6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">   
@@ -187,6 +211,10 @@
             <p class="catalog-item__new-price"> 25500 P. </p>
           </li>
           <li class="main-popular__catalog-item">
+            <div class="catalog-item__actions">
+                <a href="#" class="catalog-item__action-buy">Купить</a>
+                <a href="#" class="catalog-item__action-bookmark">В закладки</a>
+            </div>
             <a href="catalog-item.html" class="catalog-item__link">
               <p class="catalog-item__image">        
                 <img src="img/Perforator_2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">   
@@ -260,7 +288,7 @@
           </div>
           <ul class="main-services__list">
             <li class="main-services__list-item"> 
-              <a class="main-services__list-item__link" href="#"> Доставка </a>
+              <a class="main-services__list-item__link main-services__list-item__link-current" href="#"> Доставка </a>
             </li>
             <li class="main-services__list-item">
               <a class="main-services__list-item__link" href="#"> Гарантия </a>
