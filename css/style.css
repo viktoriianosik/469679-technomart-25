@@ -1052,7 +1052,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-company__text {
-    padding-right: 140px;
+    white-space: pre-line;
 }
 
 .main-company__text,
@@ -1092,8 +1092,10 @@ input[type="radio"].visually-hidden {
     vertical-align: middle;
 }
 
-.main-company__button,
-.main-contacts__button {
+.main-company__link,
+.main-contacts__link {
+    display: block;
+
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
@@ -1101,9 +1103,10 @@ input[type="radio"].visually-hidden {
 
     padding-top: 10px;
     padding-bottom: 10px;
+    border-radius: 2px;
 }
 
-.main-company__button {
+.main-company__link {
     width: 220px;
 
     white-space: nowrap;
@@ -1972,9 +1975,13 @@ input[type="radio"].visually-hidden {
     box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
 }
 
+.modal-show {
+    display: block;
+}
+
 .modal-feedback {
-    position: absolute;
-    top: 200px;
+    position: fixed;
+    bottom: 200px;
     left: 50%;
 
     width: 460px;
@@ -1982,6 +1989,8 @@ input[type="radio"].visually-hidden {
     padding: 0 80px;
 
     font-family: "Cuprum", Arial, sans-serif;
+
+    z-index: 2000;
 }
 
 .modal-feedback:before,
@@ -2027,11 +2036,11 @@ input[type="radio"].visually-hidden {
     background-color: #ee3643;
 }
 
-.modal-close::before {
+.modal-close:before {
     transform: rotate(45deg);
 }
   
-.modal-close::after {
+.modal-close:after {
     transform: rotate(-45deg);
 }
 
@@ -2091,7 +2100,9 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-feedback__form-input:focus,
-.modal-feedback__form-textarea:focus {
+.modal-feedback__form-textarea:focus,
+.modal-feedback__form-input:active,
+.modal-feedback__form-textarea:active {
     border-color: #ee3643;
 }
 
