@@ -18,7 +18,7 @@ try {
 
 contactsLink.addEventListener ("click", function (evt) {
     evt.preventDefault();
-    modalFeedback.classList.add("modal-show");
+    modalFeedback.classList.add("show-feedback");
     if (storageNameFeedback) {
         nameFeedback.value = storageNameFeedback;
         emailFeedback.focus();
@@ -33,7 +33,7 @@ contactsLink.addEventListener ("click", function (evt) {
 
 closeFeedback.addEventListener("click", function (evt){
     evt.preventDefault();
-    modalFeedback.classList.remove("modal-show");
+    modalFeedback.classList.remove("show-feedback");
 });
 
 formFeedback.addEventListener("submit", function (evt) {
@@ -51,8 +51,33 @@ formFeedback.addEventListener("submit", function (evt) {
 window.addEventListener ("keydown", function (evt){
     if (evt.keyCode === 27){
         evt.preventDefault();
-        if (modalFeedback.classList.contains("modal-show")){
-            modalFeedback.classList.remove("modal-show");
+        if (modalFeedback.classList.contains("show-feedback")){
+            modalFeedback.classList.remove("show-feedback");
         }
     }
 });
+
+var contactsMap = document.querySelector(".main-contacts__map");
+var modalMap = document.querySelector(".modal-map");
+var closeMap = modalMap.querySelector(".modal-close");
+
+contactsMap.addEventListener( "click", function (evt){
+    evt.preventDefault();
+    modalMap.classList.add("modal-show");
+});
+
+closeMap.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    modalMap.classList.remove("modal-show");
+});
+
+window.addEventListener ("keydown", function (evt){
+    if (evt.keyCode === 27){
+        evt.preventDefault();
+        if (modalMap.classList.contains("modal-show")){
+            modalMap.classList.remove("modal-show");
+        }
+    }
+});
+
+
