@@ -6,14 +6,14 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style-pre.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
       <div class="header-top__wrapper">
         <div class="header-top container">
           <a class="header-top__logo" href="#">
-            <img src="img/logo-technomart.svg" width="109" height="19" alt="Логотип Техномарт">
+            <img class="header-top__logo-img" src="img/logo-technomart.svg" width="109" height="19" alt="Логотип Техномарт">
           </a>
           <form class="header-top__search-form" method="post" action=" https://echo.htmlacademy.ru">
             <label class="header-top__search-label">
@@ -53,7 +53,7 @@
           <div class="header-middle__contacts">
             <a class="header-middle__phone-link" href="tel:+78125550555"> +7 (812) 555-05-55 </a>
             <p class="header-middle__address">
-              г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8
+              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
             </p>
           </div >
           <ul class="header-middle__user-navigation">
@@ -77,19 +77,19 @@
             </li>
           </ul>
         </div>
-      </div>
 
-      <nav class="navigation-header">
-        <ul class="navigation-header__items">
-          <li class="navigation-header__item"><a class ="navigation-header__link" href="#">Главная</a></li>
-          <li class="navigation-header__item"><a class ="navigation-header__link" href="Company.html">Компания</a></li>
-          <li class="navigation-header__item"><a class ="navigation-header__link" href="Catalog.html">Каталог</a></li>
-          <li class="navigation-header__item"><a class ="navigation-header__link" href="News.html">Новости</a></li>
-          <li class="navigation-header__item"><a class ="navigation-header__link" href="Special_offers.html">Спецпредложения</a></li>
-          <li class="navigation-header__item"><a class ="navigation-header__link" href="Delivery.html">Доставка</a></li>
-          <li class="navigation-header__item"><a class ="navigation-header__link" href="Contacts.html">Контакты</a></li>
-        </ul>
-      </nav>
+        <nav class="navigation-header container">
+          <ul class="navigation-header__items">
+            <li class="navigation-header__item"><a class ="navigation-header__link" href="#">Главная</a></li>
+            <li class="navigation-header__item"><a class ="navigation-header__link" href="Company.html">Компания</a></li>
+            <li class="navigation-header__item"><a class ="navigation-header__link" href="Catalog.html">Каталог</a></li>
+            <li class="navigation-header__item"><a class ="navigation-header__link" href="News.html">Новости</a></li>
+            <li class="navigation-header__item"><a class ="navigation-header__link" href="Special_offers.html">Спецпредложения</a></li>
+            <li class="navigation-header__item"><a class ="navigation-header__link" href="Delivery.html">Доставка</a></li>
+            <li class="navigation-header__item"><a class ="navigation-header__link" href="Contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
 
     </header>
 
@@ -291,7 +291,7 @@
                 поднимая его на ваш этаж!
               </p>
             </div>
-            <div class="main-services__quarantee">
+            <div class="main-services__guarantee">
               <h3 class="main-services__service-title"> Гарантия </h3>
               <p class="main-services__service-text">Если купленный у нас товар поломается или заискрит, 
                 а также в случае пожара, спровоцированного его возгаранием,  
@@ -319,7 +319,7 @@
           <p class="main-company__text main-company__text-padding">Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и
             строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.
           </p>
-          <p class="main-company__text">Мы можем доставить ваш товар в самые отдаленные точки Росии!
+          <p class="main-company__text">Мы можем доставить ваш товар в самые отдаленные точки Росcии!
             Техномарт рабоатет со многими транспортными компаниями:
           </p>
           <ul class="main-company__list">
@@ -327,7 +327,7 @@
               Деловые линии
             </li>
             <li class="main-company__list-item">
-              Авторейдинг
+              Автотрейдинг
             </li>
             <li class="main-company__list-item">
               ЖелДорЭкспедиция
@@ -370,7 +370,7 @@
           <div class="footer-top__contacts-navigation">
             <div>
               <p class="footer-top__contacts">
-                г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8
+                г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
               </p>
               <a class="footer-top__phone-link" href="tel:+78125550555"> +7 (812) 555-05-55 </a>
             </div>
@@ -388,8 +388,8 @@
 
       <div class="footer-bottom">
         <div class="container">
-          <p class="footer-bottom__copyright">
-            © 2010-2017 Компания «Техномарт»<br>
+          <p class="footer-bottom__copyright footer-bottom__copyright__padding">
+            © 2010-2017 Компания «Техномарт»
             Все права защищены
           </p>
           <ul class="footer-bottom__social-link">
@@ -445,24 +445,18 @@
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <form class="modal-feedback__form" action="https://echo.htmlacademy.ru" method="post">
         <div class="modal-feedback__form-top">
-          <p class="modal-feedback__form-item"> 
-            <label class="modal-feedback__form-label">
-              Ваше имя:
-              <input class="modal-feedback__form-input" type="text" name="name" placeholder="Имя Фамилия">
-            </label>
-          </p>
-          <p class="modal-feedback__form-item"> 
-            <label class="modal-feedback__form-label">
-              Ваш e-mail:
-              <input class="modal-feedback__form-input" type="text" name="email" placeholder="email@example.com">
-            </label>
-          </p>
-          <p class="modal-feedback__form-item__textarea"> 
-            <label class="modal-feedback__form-label">
-              Текст письма:
-              <textarea class="modal-feedback__form-textarea" name="text" rows="5" placeholder="В свободной форме"></textarea>
-            </label>
-          </p>
+          <label class="modal-feedback__form-label">
+            Ваше имя:
+            <input class="modal-feedback__form-input" type="text" name="name" placeholder="Имя Фамилия">
+          </label>
+          <label class="modal-feedback__form-label">
+            Ваш e-mail:
+            <input class="modal-feedback__form-input" type="text" name="email" placeholder="email@example.com">
+          </label>
+          <label class="modal-feedback__form-label__textarea">
+            Текст письма:
+            <textarea class="modal-feedback__form-textarea" name="text" rows="5" placeholder="В свободной форме"></textarea>
+          </label>
         </div>
         <div class="modal-feedback__form-button__wrapper"> 
           <button class="button modal-feedback__form-button" type="submit">

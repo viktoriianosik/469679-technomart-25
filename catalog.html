@@ -6,14 +6,14 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style-pre.css" rel="stylesheet">
   </head>
   <body>
     <header class="header header-inner">
       <div class="header-top__wrapper">
         <div class="header-top container">
           <a class="header-top__logo" href="index.html">
-            <img src="img/logo-technomart.svg" width="109" height="19" alt="Логотип Техномарт">
+            <img class="header-top__logo-img" src="img/logo-technomart.svg" width="109" height="19" alt="Логотип Техномарт">
           </a>
           <form class="header-top__search-form" method="post" action=" https://echo.htmlacademy.ru">
             <label class="header-top__search-label">
@@ -54,7 +54,7 @@
           <div class="header-middle__contacts">
             <a class="header-middle__phone-link" href="tel:+78125550555"> +7 (812) 555-05-55 </a>
             <p class="header-middle__address">
-              г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8
+              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
             </p>
           </div >
           <div class="header-middle__user-profile"> 
@@ -91,19 +91,19 @@
             </ul>
           </div>
         </div>
-      </div>
 
-      <nav class="navigation-header">
-        <ul class="navigation-header__items">
-          <li class="navigation-header__item"><a class ="navigation-header__link" href="index.html">Главная</a></li>
-          <li class="navigation-header__item"><a class ="navigation-header__link" href="Company.html">Компания</a></li>
-          <li class="navigation-header__item"><a class ="navigation-header__link" href="Catalog.html">Каталог</a></li>
-          <li class="navigation-header__item"><a class ="navigation-header__link" href="News.html">Новости</a></li>
-          <li class="navigation-header__item"><a class ="navigation-header__link" href="Special_offers.html">Спецпредложения</a></li>
-          <li class="navigation-header__item"><a class ="navigation-header__link" href="Delivery.html">Доставка</a></li>
-          <li class="navigation-header__item"><a class ="navigation-header__link" href="Contacts.html">Контакты</a></li>
-        </ul>
-      </nav>
+        <nav class="navigation-header container">
+          <ul class="navigation-header__items">
+            <li class="navigation-header__item"><a class ="navigation-header__link" href="index.html">Главная</a></li>
+            <li class="navigation-header__item"><a class ="navigation-header__link" href="Company.html">Компания</a></li>
+            <li class="navigation-header__item"><a class ="navigation-header__link" href="Catalog.html">Каталог</a></li>
+            <li class="navigation-header__item"><a class ="navigation-header__link" href="News.html">Новости</a></li>
+            <li class="navigation-header__item"><a class ="navigation-header__link" href="Special_offers.html">Спецпредложения</a></li>
+            <li class="navigation-header__item"><a class ="navigation-header__link" href="Delivery.html">Доставка</a></li>
+            <li class="navigation-header__item"><a class ="navigation-header__link" href="Contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     
     <main class="inner-container">
@@ -146,13 +146,13 @@
               </div>
             </fieldset>
             <fieldset class="filter__form">
-              <legend class="filter__title">Производители:</legend>
+              <legend class="filter__title filter__title-padding">Производители:</legend>
               <ul class="filter__items">
                 <li class="filter__item">
                   <label class="filter__item-label">
                     <input class="visually-hidden filter__item-input filter__item-input__checkbox" type="checkbox" name="BOSH"  checked>
                     <span class="input__new-checkbox"></span>
-                    <span class="filter__item-input__text">BOSH</span>
+                    <span class="filter__item-input__text">BOSCH</span>
                   </label>
                 </li>
                 <li class="filter__item">
@@ -186,7 +186,7 @@
               </ul>
             </fieldset>
             <fieldset class="filter__form filter__form-supply">
-              <legend class="filter__title">
+              <legend class="filter__title filter__title-padding">
                 Питание:
               </legend>
               <ul class="filter__items">
@@ -194,7 +194,7 @@
                   <label class="filter__item-label">
                     <input class="visually-hidden filter__item-input filter__item-input__radio" type="radio" name="product-group" value="rechargeable" checked>
                     <span class="input__new-radio"></span>
-                    <span class="filter__item-input__text">Аккумуляторные</span>
+                    <span class="filter__item-input__text ">Аккумуляторные</span>
                   </label>
                 </li>
                 <li class="filter__item">
@@ -459,7 +459,7 @@
           <div class="footer-top__contacts-navigation">
             <div>
               <p class="footer-top__contacts">
-                г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8
+                г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
               </p>
               <a class="footer-top__phone-link" href="tel:+78125550555"> +7 (812) 555-05-55 </a>
             </div>
