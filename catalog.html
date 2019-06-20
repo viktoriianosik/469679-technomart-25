@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style-pre.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="header header-inner">
@@ -58,7 +58,7 @@
             </p>
           </div >
           <div class="header-middle__user-profile"> 
-            <a class="header-middle__user-name" href="#">
+            <a class="header-middle__user-name" href="user-profile.html">
               <svg class="user-button__user-icon" version="1.1"  xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                 width="20px" height="18px" viewBox="0 0 20 18" enable-background="new 0 0 20 18" xml:space="preserve">
                 <path class="user-button__user-icon__color" fill="#c5c5c5" d="M17.881,14.166c-2.144-0.735-4.256-1.666-5.207-2.39c-0.657-0.501-0.77-1.618-0.517-2.415
@@ -67,7 +67,7 @@
               </svg>
               Равшан Джамшутович
             </a>
-            <a class="header-middle__logout" href="#">
+            <a class="header-middle__logout" href="logout.html">
               <svg class="user-button__logout-icon" version="1.1"  x="0px" y="0px"
                 width="21px" height="17px" viewBox="0 0 21 17" enable-background="new 0 0 21 17" xml:space="preserve">
                 <g>
@@ -79,12 +79,12 @@
             </a>
             <ul class="header-middle__user-setting">
               <li class="user-setting__item">
-                <a class="user-setting__link" href="#">
+                <a class="user-setting__link" href="order.html">
                   Мои заказы
                 </a>
               </li>
               <li class="user-setting__item">
-                <a class="user-setting__link" href="#">
+                <a class="user-setting__link" href="cabinet.html">
                   Личный кабинет
                 </a>
               </li>
@@ -95,12 +95,12 @@
         <nav class="navigation-header container">
           <ul class="navigation-header__items">
             <li class="navigation-header__item"><a class ="navigation-header__link" href="index.html">Главная</a></li>
-            <li class="navigation-header__item"><a class ="navigation-header__link" href="Company.html">Компания</a></li>
-            <li class="navigation-header__item"><a class ="navigation-header__link" href="Catalog.html">Каталог</a></li>
-            <li class="navigation-header__item"><a class ="navigation-header__link" href="News.html">Новости</a></li>
-            <li class="navigation-header__item"><a class ="navigation-header__link" href="Special_offers.html">Спецпредложения</a></li>
-            <li class="navigation-header__item"><a class ="navigation-header__link" href="Delivery.html">Доставка</a></li>
-            <li class="navigation-header__item"><a class ="navigation-header__link" href="Contacts.html">Контакты</a></li>
+            <li class="navigation-header__item"><a class ="navigation-header__link" href="company.html">Компания</a></li>
+            <li class="navigation-header__item"><a class ="navigation-header__link" href="#">Каталог</a></li>
+            <li class="navigation-header__item"><a class ="navigation-header__link" href="news.html">Новости</a></li>
+            <li class="navigation-header__item"><a class ="navigation-header__link" href="special_offers.html">Спецпредложения</a></li>
+            <li class="navigation-header__item"><a class ="navigation-header__link" href="delivery.html">Доставка</a></li>
+            <li class="navigation-header__item"><a class ="navigation-header__link" href="contacts.html">Контакты</a></li>
           </ul>
         </nav>
       </div>
@@ -114,9 +114,9 @@
               <img src="img/icon-home.svg" width="14" height="12" alt="Главная">
             </a>
           </li>
-          <li class="inner-main__breadcrumbs-item"><a class="inner-main__breadcrumbs-link" href="Catalog.html"> Каталог</a></li>
-          <li class="inner-main__breadcrumbs-item"><a class="inner-main__breadcrumbs-link" href="Tool.html"> Инструмент</a></li>
-          <li class="inner-main__breadcrumbs-item breadcrumbs-current"><a class="inner-main__breadcrumbs-link" href="Perforators.html">Перфораторы </a></li>
+          <li class="inner-main__breadcrumbs-item"><a class="inner-main__breadcrumbs-link" href="catalog.html"> Каталог</a></li>
+          <li class="inner-main__breadcrumbs-item"><a class="inner-main__breadcrumbs-link" href="tool.html"> Инструмент</a></li>
+          <li class="inner-main__breadcrumbs-item breadcrumbs-current"><a class="inner-main__breadcrumbs-link" href="perforators.html">Перфораторы </a></li>
         </ul>
       </div>
       <div class="container">
@@ -194,7 +194,7 @@
                   <label class="filter__item-label">
                     <input class="visually-hidden filter__item-input filter__item-input__radio" type="radio" name="product-group" value="rechargeable" checked>
                     <span class="input__new-radio"></span>
-                    <span class="filter__item-input__text ">Аккумуляторные</span>
+                    <span class="filter__item-input__text">Аккумуляторные</span>
                   </label>
                 </li>
                 <li class="filter__item">
@@ -235,8 +235,8 @@
           <ul class="inner-main__catalog-list">
             <li class="inner-main__catalog-item">
               <div class="catalog-item__actions">
-                <a href="#" class="catalog-item__action-buy">Купить</a>
-                <a href="#" class="catalog-item__action-bookmark">В закладки</a>
+                <a href="buy.html" class="catalog-item__action-buy">Купить</a>
+                <a href="boormarks.html" class="catalog-item__action-bookmark">В закладки</a>
               </div>
               <a href="catalog-item.html" class="catalog-item__link">
                 <p class="catalog-item__image">
@@ -255,8 +255,8 @@
             </li>
             <li class="inner-main__catalog-item">
               <div class="catalog-item__actions">
-                  <a href="#" class="catalog-item__action-buy">Купить</a>
-                  <a href="#" class="catalog-item__action-bookmark">В закладки</a>
+                  <a href="buy.html" class="catalog-item__action-buy">Купить</a>
+                  <a href="bookmarks.html" class="catalog-item__action-bookmark">В закладки</a>
               </div>
               <a href="catalog-item.html" class="catalog-item__link">
                 <p class="catalog-item__image">
@@ -275,8 +275,8 @@
             </li>
             <li class="inner-main__catalog-item">
               <div class="catalog-item__actions">
-                <a href="#" class="catalog-item__action-buy">Купить</a>
-                <a href="#" class="catalog-item__action-bookmark">В закладки</a>
+                <a href="buy.html" class="catalog-item__action-buy">Купить</a>
+                <a href="bookmarks.html" class="catalog-item__action-bookmark">В закладки</a>
               </div>
               <a href="catalog-item.html" class="catalog-item__link">
                 <p class="catalog-item__image">        
@@ -294,8 +294,8 @@
             </li>
             <li class="inner-main__catalog-item">
               <div class="catalog-item__actions">
-                <a href="#" class="catalog-item__action-buy">Купить</a>
-                <a href="#" class="catalog-item__action-bookmark">В закладки</a>
+                <a href="buy.html" class="catalog-item__action-buy">Купить</a>
+                <a href="bookmarks.html" class="catalog-item__action-bookmark">В закладки</a>
               </div>
               <a href="catalog-item.html" class="catalog-item__link">
                 <p class="catalog-item__image">
@@ -314,8 +314,8 @@
             </li>
             <li class="inner-main__catalog-item">
               <div class="catalog-item__actions">
-                <a href="#" class="catalog-item__action-buy">Купить</a>
-                <a href="#" class="catalog-item__action-bookmark">В закладки</a>
+                <a href="buy.html" class="catalog-item__action-buy">Купить</a>
+                <a href="bookmarks.html" class="catalog-item__action-bookmark">В закладки</a>
               </div>
               <a href="catalog-item.html" class="catalog-item__link">
                 <p class="catalog-item__image">             
@@ -335,8 +335,8 @@
             </li>
             <li class="inner-main__catalog-item">
               <div class="catalog-item__actions">
-                <a href="#" class="catalog-item__action-buy">Купить</a>
-                <a href="#" class="catalog-item__action-bookmark">В закладки</a>
+                <a href="buy.html" class="catalog-item__action-buy">Купить</a>
+                <a href="bookmarks.html" class="catalog-item__action-bookmark">В закладки</a>
               </div>
               <a href="catalog-item.html" class="catalog-item__link">
                 <p class="catalog-item__image">        
@@ -353,8 +353,8 @@
             </li>
             <li class="inner-main__catalog-item">
               <div class="catalog-item__actions">
-                <a href="#" class="catalog-item__action-buy">Купить</a>
-                <a href="#" class="catalog-item__action-bookmark">В закладки</a>
+                <a href="buy.html" class="catalog-item__action-buy">Купить</a>
+                <a href="bookmarks.html" class="catalog-item__action-bookmark">В закладки</a>
               </div>
               <a href="catalog-item.html" class="catalog-item__link">
                 <p class="catalog-item__image">
@@ -374,8 +374,8 @@
             </li>
             <li class="inner-main__catalog-item">
               <div class="catalog-item__actions">
-                <a href="#" class="catalog-item__action-buy">Купить</a>
-                <a href="#" class="catalog-item__action-bookmark">В закладки</a>
+                <a href="buy.html" class="catalog-item__action-buy">Купить</a>
+                <a href="bookmarks.html" class="catalog-item__action-bookmark">В закладки</a>
               </div>
               <a href="catalog-item.html" class="catalog-item__link">
                 <p class="catalog-item__image">
@@ -394,8 +394,8 @@
             </li>
             <li class="inner-main__catalog-item">
               <div class="catalog-item__actions">
-                <a href="#" class="catalog-item__action-buy">Купить</a>
-                <a href="#" class="catalog-item__action-bookmark">В закладки</a>
+                <a href="buy.html" class="catalog-item__action-buy">Купить</a>
+                <a href="bookmarks.html" class="catalog-item__action-bookmark">В закладки</a>
               </div>
               <a href="catalog-item.html" class="catalog-item__link">
                 <p class="catalog-item__image">
@@ -419,13 +419,13 @@
               <a class="inner-main__pagination-item__link inner-main__pagination-item__link-current"  href="#">1</a>
             </li>
             <li class="inner-main__pagination-item">
-              <a class="inner-main__pagination-item__link"> 2</a>
+              <a class="inner-main__pagination-item__link" href="catalog_page2.html"> 2</a>
             </li>
             <li class="inner-main__pagination-item">
-              <a class="inner-main__pagination-item__link" href="#">3</a>
+              <a class="inner-main__pagination-item__link" href="catalog_page3.html">3</a>
             </li>
             <li class="inner-main__pagination-item">
-              <a class="inner-main__pagination-item__link inner-main__pagination-item__link-next" href="#">Следующая</a>
+              <a class="inner-main__pagination-item__link inner-main__pagination-item__link-next" href="catalog_page_next.html">Следующая</a>
             </li>
         </ul>
       </section>
@@ -448,11 +448,11 @@
             </a>
             <nav class="navigation-footer">
               <ul class="navigation-footer__items navigation-footer__items__top">
-                <li class="navigation-footer__item"><a class="navigation-footer__link" href="Company.html">Компания</a></li>
-                <li class="navigation-footer__item"><a class="navigation-footer__link" href="News.html">Новости</a></li>
-                <li class="navigation-footer__item"><a class="navigation-footer__link" href="Catalog.html">Каталог</a></li>
-                <li class="navigation-footer__item"><a class="navigation-footer__link" href="Delivery.html">Доставка</a></li>
-                <li class="navigation-footer__item"><a class="navigation-footer__link" href="Contacts.html">Контакты</a></li>
+                <li class="navigation-footer__item"><a class="navigation-footer__link" href="company.html">Компания</a></li>
+                <li class="navigation-footer__item"><a class="navigation-footer__link" href="news.html">Новости</a></li>
+                <li class="navigation-footer__item"><a class="navigation-footer__link" href="catalog.html">Каталог</a></li>
+                <li class="navigation-footer__item"><a class="navigation-footer__link" href="delivery.html">Доставка</a></li>
+                <li class="navigation-footer__item"><a class="navigation-footer__link" href="contacts.html">Контакты</a></li>
               </ul>
             </nav>
           </div>
@@ -465,10 +465,10 @@
             </div>
             <nav class="navigation-footer">
               <ul class="navigation-footer__items navigation-footer__items__bottom">
-                <li class="navigation-footer__item"><a class="navigation-footer__link navigation-footer__link-color" href="Materials.html">Материалы</a></li>
-                <li class="navigation-footer__item"><a class="navigation-footer__link navigation-footer__link-color" href="Equipment.html">Техника</a></li>
-                <li class="navigation-footer__item"><a class="navigation-footer__link navigation-footer__link-color" href="Tool.html">Инструмент</a></li>
-                <li class="navigation-footer__item"><a class="navigation-footer__link navigation-footer__link-color" href="Special_offers.html">Спецпредложения</a></li>
+                <li class="navigation-footer__item"><a class="navigation-footer__link navigation-footer__link-color" href="materials.html">Материалы</a></li>
+                <li class="navigation-footer__item"><a class="navigation-footer__link navigation-footer__link-color" href="equipment.html">Техника</a></li>
+                <li class="navigation-footer__item"><a class="navigation-footer__link navigation-footer__link-color" href="tool.html">Инструмент</a></li>
+                <li class="navigation-footer__item"><a class="navigation-footer__link navigation-footer__link-color" href="special_offers.html">Спецпредложения</a></li>
               </ul>
             </nav>
           </div>
@@ -483,17 +483,17 @@
           </p>
           <ul class="footer-bottom__social-link">
             <li class="social-link__item">
-              <a class="social-link__vk" href="#">
+              <a class="social-link__vk" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Вконтакте</span>
               </a>
             </li>
             <li class="social-link__item">
-              <a class="social-link__fb" href="#">
+              <a class="social-link__fb" href="https://www.facebook.com/htmlacademy">
                 <span class="visually-hidden">Фейсбук</span>
               </a>
             </li>
             <li class="social-link__item">
-              <a class="social-link__insta" href="#">
+              <a class="social-link__insta" href="https://www.instagram.com/htmlacademy/">
                 <span class="visually-hidden">Инстаграм</span>
               </a>
             </li>
@@ -535,7 +535,7 @@
         </button>
     </section>
     
-    <script src="js/script_catalog.min.js"></script>
+    <script src="js/main.min.js"></script>
 
   </body>
 </html>

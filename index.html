@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style-pre.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
@@ -57,7 +57,7 @@
             </p>
           </div >
           <ul class="header-middle__user-navigation">
-            <li class="signin-link">
+            <li class="user-navigation__item">
               <a class="button user-button user-button__login" href="login.html">
                 <svg class="user-button__login-icon" version="1.1"  x="0" y="0"
                   width="20" height="17" viewBox="0 0 20 17" enable-background="new 0 0 20 17" xml:space="preserve">
@@ -70,7 +70,7 @@
                 Войти
               </a>
             </li>
-            <li class="signup-link">
+            <li class="user-navigation__item">
               <a class="button user-button user-button__signup" href="signup.html">
                 Регистрация
               </a>
@@ -81,12 +81,12 @@
         <nav class="navigation-header container">
           <ul class="navigation-header__items">
             <li class="navigation-header__item"><a class ="navigation-header__link" href="#">Главная</a></li>
-            <li class="navigation-header__item"><a class ="navigation-header__link" href="Company.html">Компания</a></li>
-            <li class="navigation-header__item"><a class ="navigation-header__link" href="Catalog.html">Каталог</a></li>
-            <li class="navigation-header__item"><a class ="navigation-header__link" href="News.html">Новости</a></li>
-            <li class="navigation-header__item"><a class ="navigation-header__link" href="Special_offers.html">Спецпредложения</a></li>
-            <li class="navigation-header__item"><a class ="navigation-header__link" href="Delivery.html">Доставка</a></li>
-            <li class="navigation-header__item"><a class ="navigation-header__link" href="Contacts.html">Контакты</a></li>
+            <li class="navigation-header__item"><a class ="navigation-header__link" href="company.html">Компания</a></li>
+            <li class="navigation-header__item"><a class ="navigation-header__link" href="catalog.html">Каталог</a></li>
+            <li class="navigation-header__item"><a class ="navigation-header__link" href="news.html">Новости</a></li>
+            <li class="navigation-header__item"><a class ="navigation-header__link" href="special_offers.html">Спецпредложения</a></li>
+            <li class="navigation-header__item"><a class ="navigation-header__link" href="delivery.html">Доставка</a></li>
+            <li class="navigation-header__item"><a class ="navigation-header__link" href="contacts.html">Контакты</a></li>
           </ul>
         </nav>
       </div>
@@ -100,7 +100,7 @@
         <div class="main-promo__list">
           <div class="main-promo__list-block main-promo__list-block__left"> 
             <div class="main-promo__list-item main-promo__list-item__material">
-              <h3 class="main-promo__list-item__title">Материалы</h3>
+              <h3 class="main-promo__list-item__title">Материалы </h3>
               <a class="main-promo__list-item__link button" href="material.html" >На любой вкус</a>
               <img class="main-promo__list-item__new-flag" src="img/new_flag.png" width="60" height="59" alt="New">
             </div>
@@ -160,7 +160,7 @@
       <section class="main-popular container">
         <div class="main-popular__title-block">
           <h2 class="main-popular__title">Популярные товары:</h2>
-          <a class="main-popular__button button" href="#">Все популярные товары</a>
+          <a class="main-popular__button button" href="popular.html">Все популярные товары</a>
         </div>
         <ul class="main-popular__catalog-list">
           <li class="main-popular__catalog-item">
@@ -218,7 +218,7 @@
       <section class="main-brands container">
         <div class="main-brands__title-block">
           <h2 class="main-brands__title">Популярные производители:</h2>
-          <a class="main-brands__button button" href="#">Все производители</a>
+          <a class="main-brands__button button" href="brands.html">Все производители</a>
         </div>
         <ul class="main-brands__catalog-list">
           <li class="main-brands__catalog-item">
@@ -273,13 +273,13 @@
           </div>
           <ul class="main-services__list">
             <li class="main-services__list-item"> 
-              <a class="main-services__list-item__link main-services__list-item__link-current" href="#"> Доставка </a>
+              <a class="main-services__list-item__link main-services__list-item__link-current" href="delivery.html"> Доставка </a>
             </li>
             <li class="main-services__list-item">
-              <a class="main-services__list-item__link" href="#"> Гарантия </a>
+              <a class="main-services__list-item__link" href="guarantee.html"> Гарантия </a>
             </li>
             <li class="main-services__list-item">
-              <a class="main-services__list-item__link" href="#"> Кредит </a>
+              <a class="main-services__list-item__link" href="credit.html"> Кредит </a>
             </li>
           </ul>
           <div class="main-services__service">
@@ -333,7 +333,7 @@
               ЖелДорЭкспедиция
             </li>
           </ul>
-          <a class="main-company__link button" href="Company.html"> Подробнее о компании </a>
+          <a class="main-company__link button" href="company.html"> Подробнее о компании </a>
         </section>
         <section class="main-contacts">
           <h2 class="main-contacts__title">
@@ -345,7 +345,7 @@
           <a class="main-contacts__map" href="#">
             <img src="img/map.jpg" width="300" height="158" alt="Карта офиса по адресу улица Большая Конюшенная, 19">
           </a>
-          <a class="main-contacts__link button" href="#"> Заблудились? Напишите нам! </a>
+          <a class="main-contacts__link button" href="feedback.html"> Заблудились? Напишите нам! </a>
         </section>
       </div>
     </main>
@@ -359,16 +359,16 @@
             </a>
             <nav class="navigation-footer">
               <ul class="navigation-footer__items navigation-footer__items__top">
-                <li class="navigation-footer__item"><a class="navigation-footer__link" href="Company.html">Компания</a></li>
-                <li class="navigation-footer__item"><a class="navigation-footer__link" href="News.html">Новости</a></li>
-                <li class="navigation-footer__item"><a class="navigation-footer__link" href="Catalog.html">Каталог</a></li>
-                <li class="navigation-footer__item"><a class="navigation-footer__link" href="Delivery.html">Доставка</a></li>
-                <li class="navigation-footer__item"><a class="navigation-footer__link" href="Contacts.html">Контакты</a></li>
+                <li class="navigation-footer__item"><a class="navigation-footer__link" href="company.html">Компания</a></li>
+                <li class="navigation-footer__item"><a class="navigation-footer__link" href="news.html">Новости</a></li>
+                <li class="navigation-footer__item"><a class="navigation-footer__link" href="catalog.html">Каталог</a></li>
+                <li class="navigation-footer__item"><a class="navigation-footer__link" href="delivery.html">Доставка</a></li>
+                <li class="navigation-footer__item"><a class="navigation-footer__link" href="contacts.html">Контакты</a></li>
               </ul>
             </nav>
           </div>
           <div class="footer-top__contacts-navigation">
-            <div>
+            <div class="footer-top__contacts-block">
               <p class="footer-top__contacts">
                 г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
               </p>
@@ -376,10 +376,10 @@
             </div>
             <nav class="navigation-footer">
               <ul class="navigation-footer__items navigation-footer__items__bottom">
-                <li class="navigation-footer__item"><a class="navigation-footer__link navigation-footer__link-color" href="Materials.html">Материалы</a></li>
-                <li class="navigation-footer__item"><a class="navigation-footer__link navigation-footer__link-color" href="Equipment.html">Техника</a></li>
-                <li class="navigation-footer__item"><a class="navigation-footer__link navigation-footer__link-color" href="Tool.html">Инструмент</a></li>
-                <li class="navigation-footer__item"><a class="navigation-footer__link navigation-footer__link-color" href="Special_offers.html">Спецпредложения</a></li>
+                <li class="navigation-footer__item"><a class="navigation-footer__link navigation-footer__link-color" href="materials.html">Материалы</a></li>
+                <li class="navigation-footer__item"><a class="navigation-footer__link navigation-footer__link-color" href="equipment.html">Техника</a></li>
+                <li class="navigation-footer__item"><a class="navigation-footer__link navigation-footer__link-color" href="tool.html">Инструмент</a></li>
+                <li class="navigation-footer__item"><a class="navigation-footer__link navigation-footer__link-color" href="special_offers.html">Спецпредложения</a></li>
               </ul>
             </nav>
           </div>
@@ -394,17 +394,17 @@
           </p>
           <ul class="footer-bottom__social-link">
             <li class="social-link__item">
-              <a class="social-link__vk" href="#">
+              <a class="social-link__vk" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Вконтакте</span>
               </a>
             </li>
             <li class="social-link__item">
-              <a class="social-link__fb" href="#">
+              <a class="social-link__fb" href="https://www.facebook.com/htmlacademy">
                 <span class="visually-hidden">Фейсбук</span>
               </a>
             </li>
             <li class="social-link__item">
-              <a class="social-link__insta" href="#">
+              <a class="social-link__insta" href="https://www.instagram.com/htmlacademy/">
                 <span class="visually-hidden">Инстаграм</span>
               </a>
             </li>
@@ -469,7 +469,7 @@
       </button>
     </section>
     
-    <script src="js/script.min.js"></script>
+    <script src="js/main.min.js"></script>
 
   </body>
 </html>
