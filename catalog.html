@@ -34,15 +34,15 @@
               </a>
             </label>
           </form>
-          <button class="button header-top__button header-top__button-bookmark" type="button">
+          <a class="header-top__link header-top__link-bookmark button" href="bookmark.html">
             Закладки: 0
-          </button>
-          <button class="button header-top__button header-top__button-cart header-top__button-full " type="button">
+          </a>
+          <a class="header-top__link header-top__link-cart header-top__link-full button" href="cart.html">
             Корзина: 10
-          </button>
-          <button class="button header-top__button" type="button">
+          </a>
+          <a class="header-top__link button" href="oreder.html">
             Оформить заказ
-          </button>
+          </a>
         </div>
       </div>
       <div class="header-middle__wrapper">
@@ -68,6 +68,7 @@
               Равшан Джамшутович
             </a>
             <a class="header-middle__logout" href="logout.html">
+              <span class="visually-hidden">Выйти из аккаунта</span>
               <svg class="user-button__logout-icon" version="1.1"  x="0px" y="0px"
                 width="21px" height="17px" viewBox="0 0 21 17" enable-background="new 0 0 21 17" xml:space="preserve">
                 <g>
@@ -216,20 +217,24 @@
           </h2>
           <div class="inner-main__catalog-sorting">
             <h2 class="inner-main__catalog-sorting__title">Сортировка:</h2>
-            <div class="inner-main__catalog-sorting__button-wrapper">
-              <button  class="inner-main__catalog-sorting__button">
-                <span class="inner-main__catalog-sorting__button-text">По цене: </span>
-              </button>
-              <button class="inner-main__catalog-sorting__button">
-                <span class="inner-main__catalog-sorting__button-text">По типу:</span>
-              </button>
-              <button class="inner-main__catalog-sorting__button">
-                <span class="inner-main__catalog-sorting__button-text"> По функционалу: </span>
-              </button>
+            <div class="inner-main__catalog-sorting__link-wrapper">
+              <a  class="inner-main__catalog-sorting__link inner-main__catalog-sorting__link-current" href="sorting.html">
+                <span class="inner-main__catalog-sorting__link-text">По цене </span>
+              </a>
+              <a class="inner-main__catalog-sorting__link" href="sorting.html">
+                <span class="inner-main__catalog-sorting__link-text">По типу</span>
+              </a>
+              <a class="inner-main__catalog-sorting__link" href="sorting.html">
+                <span class="inner-main__catalog-sorting__link-text"> По функционалу </span>
+              </a>
             </div>
             <div class="inner-main__catalog-sorting__arrow-wrapper">
-                <button class="inner-main__catalog-sorting__arrow inner-main__catalog-sorting__arrow-top"></button>
-                <button class="inner-main__catalog-sorting__arrow inner-main__catalog-sorting__arrow-bottom"></button>
+                <a class="inner-main__catalog-sorting__arrow inner-main__catalog-sorting__arrow-current inner-main__catalog-sorting__arrow-top">
+                  <span class="visually-hidden">Сортировка товаров по возрастанию</span>
+                </a>
+                <a class="inner-main__catalog-sorting__arrow inner-main__catalog-sorting__arrow-bottom">
+                  <span class="visually-hidden">Сортировка товаров по убыванию</span>
+                </a>
             </div>
           </div>
           <ul class="inner-main__catalog-list">
@@ -240,7 +245,7 @@
               </div>
               <a href="catalog-item.html" class="catalog-item__link">
                 <p class="catalog-item__image">
-                  <img src="img/Perforator_3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+                  <img src="img/perforator_3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
                 </p>
                 <h3 class="catalog-item__name">
                   Перфоратор BOSCH BFG 3000
@@ -260,7 +265,7 @@
               </div>
               <a href="catalog-item.html" class="catalog-item__link">
                 <p class="catalog-item__image">
-                  <img src="img/Perforator_6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+                  <img src="img/perforator_6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
                 </p>
                 <h3 class="catalog-item__name">
                   Перфоратор BOSCH BFG 6000
@@ -280,7 +285,7 @@
               </div>
               <a href="catalog-item.html" class="catalog-item__link">
                 <p class="catalog-item__image">        
-                  <img src="img/Perforator_2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">   
+                  <img src="img/perforator_2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">   
                 </p>
                 <h3 class="catalog-item__name">
                   Перфоратор BOSCH BFG 2000
@@ -299,7 +304,7 @@
               </div>
               <a href="catalog-item.html" class="catalog-item__link">
                 <p class="catalog-item__image">
-                  <img src="img/Perforator_3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+                  <img src="img/perforator_3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
                 </p>
                 <h3 class="catalog-item__name">
                   Перфоратор BOSCH BFG 3000
@@ -319,7 +324,7 @@
               </div>
               <a href="catalog-item.html" class="catalog-item__link">
                 <p class="catalog-item__image">             
-                  <img src="img/Perforator_6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">              
+                  <img src="img/perforator_6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">              
                 </p>
                 <h3 class="catalog-item__name">
                   Перфоратор BOSCH BFG 6000
@@ -340,7 +345,7 @@
               </div>
               <a href="catalog-item.html" class="catalog-item__link">
                 <p class="catalog-item__image">        
-                  <img src="img/Perforator_2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">   
+                  <img src="img/perforator_2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">   
                 </p>
                 <h3 class="catalog-item__name">
                   Перфоратор BOSCH BFG 2000
@@ -358,7 +363,7 @@
               </div>
               <a href="catalog-item.html" class="catalog-item__link">
                 <p class="catalog-item__image">
-                  <img src="img/Perforator_3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+                  <img src="img/perforator_3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
                 </p>
                 <h3 class="catalog-item__name">             
                   Перфоратор BOSCH BFG 3000
@@ -399,7 +404,7 @@
               </div>
               <a href="catalog-item.html" class="catalog-item__link">
                 <p class="catalog-item__image">
-                  <img src="img/Perforator_2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+                  <img src="img/perforator_2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
                 </p>
                 <h3 class="catalog-item__name">
                   Перфоратор BOSCH BFG 2000
